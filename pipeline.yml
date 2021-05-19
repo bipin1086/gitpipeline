@@ -1,0 +1,9 @@
+---
+jobs:
+  - name: pass-input-output
+    public: true
+    plan:
+      - task: create_files
+        file: ./pass-input-output/create_file.yml
+      - task: show_files
+        file: ./pass-input-output/show_files.yml
