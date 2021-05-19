@@ -1,9 +1,17 @@
 ---
+resources:
+ - name: resource-git
+   type: git 
+   source:
+     uri: https://github.com/bipin1086/gitpipeline.git
+     branch: main
+
 jobs:
   - name: pass-input-output
     public: true
     plan:
+      - get: resource-git
       - task: create_files
-        file: ./pass-input-output/create_file.yml
+        file: resource-git/create_file.yml
       - task: show_files
-        file: ./pass-input-output/show_files.yml
+        file: resource-git/show_files.yml
