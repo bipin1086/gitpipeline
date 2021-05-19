@@ -8,4 +8,4 @@ inputs:
 outputs:
   - name: some-files
 run:
-  path: pass-input-output/create_files.sh
+  path: resource-git/create_files.sh

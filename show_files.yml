@@ -7,4 +7,4 @@ inputs:
   - name: some-files
   - name: resource-git
 run:
-  path: pass-input-output/show-files.sh
+  path: resource-git/show-files.sh
