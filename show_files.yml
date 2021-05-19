@@ -5,6 +5,6 @@ image_resource:
   source: {repository: busybox}
 inputs:
   - name: some-files
-  - name: pass-input-output
+  - name: resource-git
 run:
   path: pass-input-output/show-files.sh
