@@ -4,8 +4,8 @@ image_resource:
   type: docker-image
   source: {repository: busybox}
 inputs:
-  name: pass-input-output
+  - name: pass-input-output
 outputs:
-  name: some-files
+  - name: some-files
 run:
   path: pass-input-output/create_files.sh
